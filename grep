@@ -1,0 +1,50 @@
+# Search all lines with specified string in a file	
+grep "string" test.txt
+
+# Search all lines with specified string in a file pattern (test_1.txt, test_2.txt, test_3.txt ...)	
+grep "string" test_*.txt
+
+# Case insensitive search all lines with specified string in a file	
+grep -i "string" test.txt
+
+# match regex in files (*)	
+grep "REGEX" test.txt
+
+# Match lines with the pattern starts with "first" and ends with "last" with anything in-between	
+grep "start.*end" test.txt
+
+# search for full words, not for sub-strings	
+grep -iw "is" test.txt
+
+# display line matches the pattern and N lines after match	
+grep -A 3 "string" test.txt
+
+# display line matches the pattern and N lines before match	
+grep -B 2 "string" test.txt
+
+# display line matches the pattern and N lines before match and N lines after match	
+grep -C 2 "string" test.txt
+
+# search all files recursively	
+grep -r "string" *
+
+# display all lines that doesn’t match the given pattern	
+grep -v "string" test.txt
+
+# display lines that doesn’t match all the given pattern (if there are more than one pattern)	
+grep -v -e "string1" -v -e "string2" test.txt
+
+# count the number of lines that matches the pattern	
+grep -c "string" test.txt
+
+# count the number of lines that don’t match the pattern	
+grep -v -c "string" test.txt
+
+# display only the filenames containing the given pattern (test_1.txt, test_2.txt, test_3.txt ...)	
+grep -l "string" test_*.txt
+
+# Show only the matched string, not the whole line	
+grep -o "start.*end" test.txt
+
+# show line number while displaying the output	
+grep -n "string" test.txt
