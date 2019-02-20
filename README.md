@@ -16,13 +16,13 @@
 # Bash-Fu
 Hi all, these are the most common used Linux commands and their examples with some brief explanations.
 
-.. grep
-.. sort
-.. uniq
-.. cut
-.. find
-.. head/tail
-.. awk
-.. sed
+grep
+sort
+uniq
+cut
+find
+head/tail
+awk
+sed
 
 May the force be with you!
