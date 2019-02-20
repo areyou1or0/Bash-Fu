@@ -1,0 +1,17 @@
+# Show unique lines only (without showing duplicate lines)	
+uniq test.txt
+
+# Show unique lines with line numbers	
+uniq -c test.txt
+
+# Show repeated lines only	
+uniq -d test.txt
+
+# Show repeated lines (with all repetitions)	
+uniq -D test.txt
+
+# Show the lines that never repeat	
+uniq -u test.txt
+
+# Show unique lines case-insensitive	
+uniq -i test.txt
