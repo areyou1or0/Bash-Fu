@@ -1,0 +1,17 @@
+# Display the first ten lines of test.txt	
+head test.txt
+
+# Display first 5 lines of test.txt	
+head -n5 test.txt
+
+# Display first 5 lines of test.txt (n is really necessary)	
+head -5 test.txt
+
+# Display the last ten lines of test.txt	
+tail test.txt
+
+# Display last 5 lines of test.txt	
+tail -n5 test.txt
+
+# Display last 5 lines of test.txt (n is really necessary)	
+tail -5 test.txt
