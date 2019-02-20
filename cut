@@ -1,0 +1,20 @@
+# displays 2nd character from each line of a file	
+cut -c2 test.txt
+
+# display first 3 character of from each line of a file	
+cut -c1-3 test.txt
+
+# display characters starting from 3rd character to the end of each line of a file	
+cut -c3- test.txt
+
+# display first 8 character of from each line of a file	
+cut -c-8 test.txt
+
+# display 1st field when : is used as a delimeter	
+cut -d':' -f1 test.txt
+
+# display 1st and 6th fields when : is used as a delimeter	
+cut -d':' -f1,6 test.txt
+
+# display all fileds except 7th field when : is used as a delimeter	
+cut -d':' –complement -s -f7 test.txt
